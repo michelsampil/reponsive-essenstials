@@ -1,0 +1,176 @@
+/* Sellectors */
+
+/* Wildcard */
+/*   */
+
+/* Tag name */
+/* body {
+  background-color: gray;
+} */
+
+/* class-name */
+/* .special-title {
+  color: aqua;
+}  */
+
+/* id */
+/* #super-potato-title {
+  background-color: black;
+} */
+
+/* Specificity -- esp ... ++esp */
+/* Wildcard (*) < Tag</> < class-name < #id */
+
+/* Same Specificity - only last matters */
+/* body {
+  background-color: black;
+} */
+
+/* body {
+  background-color: blue;
+} */
+
+/* Combinators */
+
+/* Descendant Combinator ' ' */
+/* div h3 {
+  color: violet;
+} */
+
+/* Child Combinator ' > ' */
+/* div > h3 {
+  color: lime;
+} */
+
+/* Adjacent sibling combinator ' + '*/
+ /* img + p {
+  font-weight: bold;
+} */
+
+/* General sibling combinator ' ~ '*/
+/* h3 ~ img {
+  filter: grayscale();
+} */
+
+/* AND (both conditions at the same time) */
+/* .special-title{
+  background: linear-gradient(45deg, yellow, lime);
+}
+
+.super-special-title{
+  color: violet;
+}
+
+.special-title.super-special-title{
+  font-size: xx-large;
+} */
+
+/* OR (at least one condition at a time) */
+/* p,h3{
+  background-color: mediumspringgreen;
+} */
+
+/* !important (try to not use it please!!!) */
+/* h1{
+  background: linear-gradient(45deg, violet, blue) !important;
+}
+
+h1{
+  background: linear-gradient(45deg, mediumspringgreen, violet);
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* ========================================================== */
+ 
+/* FLEX CONTAINER */
+ section {
+
+  /* Direction and behavior when overflow*/
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  flex-flow: row wrap;
+
+  /* Alignment */
+  justify-content: flex-start;
+  align-items:stretch;
+  
+  /* Space between elements */
+  row-gap: 1vw;
+  column-gap: 1vw;
+ }
+
+ /* =========================================================== */
+
+ /* FLEX ELEMENT */
+ .potato-card {
+
+  /* Box size */
+  flex-basis: 30vw;
+  /* flex-basis: auto;   */
+
+  /* Items order */
+  /* order: 1; */
+
+  /* Relative size to others element's size */
+  /* flex-grow: 1; */
+
+  /*  Shrink */
+  /* flex-shrink: 1; */
+ 
+
+}
+
+/* Relative size to others element's size */
+/* .double-potato-card {
+  background-color: aquamarine !important;
+  flex-grow: 10; */
+
+  /* flex-shrink: 2; */
+/* } */
+
+
+ /* body {
+  font-size: 50px;
+ } */
+
+ /* h2 {
+  font-size: xx-large;
+  color: lime;
+  background-color: black;
+  width: 20px;
+  display: inline;
+ } */
+
+ /* h3 {
+  font-size: 1.9rem;
+ } */
+
+ footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: x-large;
+ }
+
+ 
